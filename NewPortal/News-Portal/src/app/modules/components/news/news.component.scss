@@ -1,0 +1,38 @@
+.p-panel-cls{
+    margin-bottom: 20px !important;
+}
+
+::ng-deep .p-element, .news-container{
+    margin-bottom: 20px !important;
+}
+
+::ng-deep .m-l-5{
+margin-left: 5px !important;
+}
+
+
+
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end !important; 
+}
+.add{
+    margin-left: 10px !important;
+}
+
+.flex-container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // height: 40px !important;
+}
+.action-bar{
+    justify-content: flex-end !important; 
+    padding:5px !important;
+    margin-top: 5px !important;
+}
+.created-date{
+    justify-content: flex-start !important; 
+}
+

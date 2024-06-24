@@ -1,0 +1,11 @@
+.flex-container-footer{
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    // height: 40px !important;
+}
+.action-bar{
+    justify-content: flex-end !important; 
+    padding:5px !important;
+    margin-top: 5px !important;
+}

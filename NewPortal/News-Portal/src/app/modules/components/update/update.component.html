@@ -1,0 +1,14 @@
+
+<form [formGroup]="formGroup">    
+    <input pInputText formControlName="title" [style]="{ height: '60px', 'width':'100%' }"/>    
+    <ckeditor [editor]="Editor" formControlName="description"  [style]="{ height: '400px', 'width':'100%' }"></ckeditor>
+</form>
+
+<div class="flex-container-footer">
+    <div action-bar>
+        <p-button [rounded]="true" class="m-l-5" icon="pi pi-save" (click)="updateArticle()" />
+        </div>
+</div>
+
+
+
