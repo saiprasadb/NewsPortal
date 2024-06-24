@@ -12,7 +12,7 @@
   3. Local database software (e.g., SQL Server Express, SSMS)
 
 ## Steps
-1. Clone the repository
+1. Clone the repository **https://github.com/saiprasadb/NewsPortal.git**
 2. Backend Setup
    Open the backend solution in Visual Studio.
 			Ensure .NET 8 SDK is selected.
