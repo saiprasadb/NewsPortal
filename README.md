@@ -7,9 +7,9 @@
 
 ## Installation
   **Prerequisites**
-    Node.js and npm installed (for Angular 16)
-    Visual Studio or Visual Studio Code (for .NET 8 development)
-    Local database software (e.g., SQL Server Express, SSMS)
+  1. Node.js and npm installed (for Angular 16)
+  2. Visual Studio or Visual Studio Code (for .NET 8 development)
+  3. Local database software (e.g., SQL Server Express, SSMS)
 
 ## Steps
 1. Clone the repository
