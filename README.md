@@ -3,6 +3,7 @@
 ## Table of Contents
 - [Installation](#Installation)
 - [Steps](#Steps)
+- [Configuration](#Configuration)
 
 ## Installation
   **Prerequisites**
@@ -24,6 +25,6 @@
    Navigate to the "News-Portal" directory.
    Install dependencies: npm install
 
-**Configuration**
+## Configuration
 	Backend Configuration: Modify appsettings.json for environment-specific settings.
  
