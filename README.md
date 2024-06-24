@@ -3,7 +3,6 @@
 ## Table of Contents
 - [Installation](#Installation)
 - [Steps](#Steps)
-- [Configuration](#Configuration)
 
 ## Installation
   **Prerequisites**
@@ -20,11 +19,10 @@
    - 2.4 Modify the connection string in appsettings.json to point to your local database.
 4. Database Setup
    - Create a local database instance or use an existing one.
-   - Update the database schema using Code First migrations: dotnet ef database update
+   - Initial data is already existing in db context hence, below command will create the tables and required data in database
+   - Update the database schema using Code First migrations: **dotnet ef database update**
 5. Frontend Setup
    - Navigate to the "News-Portal" directory.
    - Install dependencies: npm install
 
-## Configuration
-	- Backend Configuration: Modify appsettings.json for environment-specific settings.
  
