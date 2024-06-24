@@ -1,0 +1,51 @@
+<div>
+    <div class="search-container">        
+          <div class="p-toolbar-group-end">
+            <span class="p-input-icon-left">              
+              <input pInputText placeholder="Search" [(ngModel)]="searchTerm"/>
+              <p-button label="Search" icon="pi pi-search" (click)="search()" />
+          </span>
+          <p-button class="add" label="Add" icon="pi pi-plus" (click)="addArticle()" />
+          </div>
+      </div>   
+
+
+      <div class="news-container" *ngFor="let article of newsArticles">
+
+        <p-panel [toggleable]="true">
+          <ng-template pTemplate="header">
+              <div class="flex align-items-center gap-2">                  
+                  <span class="font-bold">
+                    {{article.title}}
+                  </span>
+              </div>
+          </ng-template>          
+                   
+         
+            <div class="m-0" [innerHTML]="article.description"></div>
+          
+          <ng-template pTemplate="footer">
+            <div class="flex-container-footer">
+              <div class="created-date">
+                Created on {{article.createdDate | date:'medium'}}
+              </div>
+              <div action-bar>
+                <span class="p-buttonset">
+                  <p-button [rounded]="true" class="m-l-5" (click)="editArticle(article)" icon="pi pi-pencil" />                 
+                  <p-button [rounded]="true" class="m-l-5" (click)="deleteArticle(article)" icon="pi pi-trash" />
+                </span>
+              </div>
+            </div>
+          </ng-template>
+      </p-panel>      
+      </div>
+      <div class="card flex justify-content-center">
+
+        <p-paginator 
+        (onPageChange)="onPageChange($event)" 
+        [first]="first" 
+        [rows]="pageSize" 
+        [totalRecords]="totalRecords"/>
+    </div>
+
+</div>

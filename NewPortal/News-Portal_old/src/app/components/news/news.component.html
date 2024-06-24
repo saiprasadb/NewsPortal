@@ -1,0 +1,28 @@
+<div>
+    <div class="search-container">
+        <input type="text" pInputText [(ngModel)]="searchTerm" placeholder="Search news..." />
+        <button pButton type="button" label="Search" (click)="search()"></button>
+      </div>
+      
+      <div class="news-container">
+        <div *ngFor="let article of newsArticles">
+          <h3>{{ article.Title }}</h3>
+          <p>{{ article.Description }}</p>
+          <span>{{ article.Category }}</span>
+          <span>{{ article.CreatedDate}}</span>
+          <!-- <button pButton type="button" icon="pi pi-pencil" label="Edit" [routerLink]="['/edit', article.id]"></button>
+          <button pButton type="button" icon="pi pi-trash" label="Delete" (click)="deleteArticle(article.id)"></button> -->
+        </div>
+      </div>
+      
+      <div class="pagination">
+        <button pButton type="button" label="Previous" (click)="prevPage()"></button>
+        <button pButton type="button" label="Next" (click)="nextPage()"></button>
+      </div>
+      
+      <!-- <div class="create-button">
+        <button pButton type="button" icon="pi pi-plus" label="Create New Article" [routerLink]="['/create']"></button>
+      </div> -->
+      
+
+</div>
