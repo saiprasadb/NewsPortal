@@ -1,10 +1,16 @@
-**Installation**
+# News Portal
+
+## Table of Contents
+- [Installation](#Installation)
+- [Steps](#Steps)
+
+## Installation
   **Prerequisites**
     Node.js and npm installed (for Angular 16)
     Visual Studio or Visual Studio Code (for .NET 8 development)
     Local database software (e.g., SQL Server Express, SSMS)
 
-**Steps**
+## Steps
 1. Clone the repository
 2. Backend Setup
    Open the backend solution in Visual Studio.
