@@ -26,5 +26,5 @@
    - Install dependencies: npm install
 
 ## Configuration
-	Backend Configuration: Modify appsettings.json for environment-specific settings.
+	- Backend Configuration: Modify appsettings.json for environment-specific settings.
  
